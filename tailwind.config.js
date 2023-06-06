@@ -13,7 +13,8 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'carfaq': "url('/assets/cars/car-bg.png')",
+        'carfaq': "url('./src/assets/cars/car-bg.png')",
+        'heropage': "url('./src/assets/cars/heroes-bg.png')",
       },
     },
   },

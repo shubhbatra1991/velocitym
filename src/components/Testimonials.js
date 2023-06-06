@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import Img1 from '../../assets/users/user1.jpg';
-import Img2 from '../../assets/users/user3.jpg';
+import Img1 from '../assets/users/user1.jpg';
+import Img2 from '../assets/users/user3.jpg';
 import { FaQuoteRight } from 'react-icons/fa';
 
 const Testimonials = () => {

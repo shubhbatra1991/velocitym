@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Logo from "../../assets/logo/Logo.png";
+import Logo from "../assets/logo/Logo.png";
 import { useState } from "react";
 import Image from "next/image";
 import { FaBars, FaTimes } from "react-icons/fa";
