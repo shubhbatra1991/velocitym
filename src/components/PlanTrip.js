@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import SelectCar from '../../assets/icons/select_car1.png';
-import Operator from '../../assets/icons/operator.png';
-import Drive from '../../assets/icons/drive.png';
+import SelectCar from '../assets/icons/select_car1.png';
+import Operator from '../assets/icons/operator.png';
+import Drive from '../assets/icons/drive.png';
 
 const PlanTrip = () => {
   return (

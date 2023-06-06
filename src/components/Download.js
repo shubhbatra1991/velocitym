@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 
-import Img1 from "../../assets/store/appstore.svg";
-import Img2 from "../../assets/store/googleapp.svg";
-import Banner2 from '../../assets/store/bg02.png';
+import Img1 from "../assets/store/appstore.svg";
+import Img2 from "../assets/store/googleapp.svg";
+import Banner2 from '../assets/store/bg02.png';
 
 const Download = () => {
   return (

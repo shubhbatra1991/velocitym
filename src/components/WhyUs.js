@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import MainImg from '../../assets/cars/main.png';
+import MainImg from '../assets/cars/main.png';
 import { FaAngleRight } from 'react-icons/fa';
-import Box1 from "../../assets/choose-us/icon1.png";
-import Box2 from "../../assets/choose-us/icon2.png";
-import Box3 from "../../assets/choose-us/icon3.png";
+import Box1 from "../assets/choose-us/icon1.png";
+import Box2 from "../assets/choose-us/icon2.png";
+import Box3 from "../assets/choose-us/icon3.png";
 
 
 const WhyUs = () => {
