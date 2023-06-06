@@ -19,8 +19,6 @@ export default function App({ Component, pageProps }) {
               <Component key={router.asPath} {...pageProps} />
             <Footer />
           </main>
-
       </>
-
   )
 };
