@@ -20,7 +20,7 @@ const contact = () => {
               </a>
               <a href="/">
                 <i className="fa-solid fa-envelope"></i>&nbsp;
-                carrental@carmail.com
+                xyz@carmail.com
               </a>
               <a href="/">
                 <i className="fa-solid fa-location-dot"></i>&nbsp; Belgrade,
