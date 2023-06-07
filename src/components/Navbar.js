@@ -43,7 +43,7 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link onClick={openNav} href="/testimonials">
+              <Link onClick={openNav} href="/TestimonialsPage">
                 Testimonials
               </Link>
             </li>
@@ -84,7 +84,7 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link className="mx-4" href="/testimonials">
+              <Link className="mx-4" href="/TestimonialsPage">
                 Testimonials
               </Link>
             </li>
