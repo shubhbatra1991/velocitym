@@ -21,24 +21,24 @@ const Fleet = () => {
 
     <>
       <section className="py-[10rem]">
-        <div className="container">
+        <div className="!max-w-[133rem] !m-0 !px-[2.5rem]">
           <div className="flex flex-col">
             <div className="m-0 text-center text-black max-w-[50rem] mb-[5rem]">
-              <h3 className='text-[3rem] font-mont font-semibold'>Vehicle Models</h3>
-              <h2 className='text-[2rem] font-mont font-semibold'>Our rental fleet</h2>
-              <p className='text-[1.2rem] font-mont text-gray-400 leading-[.5]'>
+              <h3 className='text-[2.4rem] font-mont font-500'>Vehicle Models</h3>
+              <h2 className='text-[4.2rem] font-mont mt-[0.5rem] mb-[1rem]'>Our rental fleet</h2>
+              <p className='text-[1.6rem] font-mont text-gray-500 leading-[1.5]'>
                 Choose from a variety of our amazing vehicles to rent for your
                 next adventure or business trip
               </p>
             </div>
-            <div className="flex justify-between gap-[1rem] lg:flex-col lg:gap-[5rem]">
+            <div className="flex justify-between gap-[1rem] ">
               {/* pick car */}
               <div className="flex flex-col gap-[0.7rem]">
                 <button
                   className={`
                     ${coloringButton("btn1")}
-                    text-[2rem] font-mont font-semibold cursor-pointer border-0
-                    px-[1.5rem] py-[2.5rem] bg-white transition-all duration-200
+                    text-[2rem] font-mont font-semibold cursor-pointer border-none
+                    py-[1.5rem] px-[2.5rem] bg-gray-300 transition-all duration-200
                     text-left hover:bg-orange-500 hover:text-white
                     `}
                   onClick={() => {
@@ -50,9 +50,9 @@ const Fleet = () => {
                 </button>
                 <button
                   className={`
-                  ${coloringButton("btn2")}
-                  text-[2rem] font-mont font-semibold cursor-pointer border-0
-                    px-[1.5rem] py-[2.5rem] bg-white transition-all duration-200
+                    ${coloringButton("btn1")}
+                    text-[2rem] font-mont font-semibold cursor-pointer border-none
+                    py-[1.5rem] px-[2.5rem] bg-gray-300 transition-all duration-200
                     text-left hover:bg-orange-500 hover:text-white
                   `}
                   id="btn2"
@@ -65,10 +65,10 @@ const Fleet = () => {
                 </button>
                 <button
                   className={`
-                    text-[2rem] font-mont font-semibold cursor-pointer border-0
-                    px-[1.5rem] py-[2.5rem] bg-white transition-all duration-200
+                    ${coloringButton("btn1")}
+                    text-[2rem] font-mont font-semibold cursor-pointer border-none
+                    py-[1.5rem] px-[2.5rem] bg-gray-300 transition-all duration-200
                     text-left hover:bg-orange-500 hover:text-white
-                    ${coloringButton("btn3")}
                     `}
                   id="btn3"
                   onClick={() => {
@@ -80,9 +80,9 @@ const Fleet = () => {
                 </button>
                 <button
                   className={`
-                  ${coloringButton("btn4")}
-                  text-[2rem] font-mont font-semibold cursor-pointer border-0
-                    px-[1.5rem] py-[2.5rem] bg-white transition-all duration-200
+                    ${coloringButton("btn1")}
+                    text-[2rem] font-mont font-semibold cursor-pointer border-none
+                    py-[1.5rem] px-[2.5rem] bg-gray-300 transition-all duration-200
                     text-left hover:bg-orange-500 hover:text-white
                   `}
                   id="btn4"
@@ -95,9 +95,9 @@ const Fleet = () => {
                 </button>
                 <button
                   className={`
-                  ${coloringButton("btn5")}
-                  text-[2rem] font-mont font-semibold cursor-pointer border-0
-                    px-[1.5rem] py-[2.5rem] bg-white transition-all duration-200
+                    ${coloringButton("btn1")}
+                    text-[2rem] font-mont font-semibold cursor-pointer border-none
+                    py-[1.5rem] px-[2.5rem] bg-gray-300 transition-all duration-200
                     text-left hover:bg-orange-500 hover:text-white
                   `}
                   id="btn5"
@@ -110,10 +110,10 @@ const Fleet = () => {
                 </button>
                 <button
                   className={`
-                  text-[2rem] font-mont font-semibold cursor-pointer border-0
-                    px-[1.5rem] py-[2.5rem] bg-white transition-all duration-200
+                    ${coloringButton("btn1")}
+                    text-[2rem] font-mont font-semibold cursor-pointer border-none
+                    py-[1.5rem] px-[2.5rem] bg-gray-300 transition-all duration-200
                     text-left hover:bg-orange-500 hover:text-white
-                    ${coloringButton("btn6")}
                   `}
                   id="btn6"
                   onClick={() => {

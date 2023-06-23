@@ -36,7 +36,7 @@ const HeroBg = () => {
     <>
       <section id="home" className="w-full h-[97vh] bg-gray-300 relative">
         <div className="container">
-          <img className="absolute top-0 right-0 z-1 md:hidden" src={BgShape} alt="bg-shape" />
+          <img className="absolute top-0 right-0 z-1 md:hidden my-custom-hero-bg" alt="bg-shape" />
           <div className="w-full h-[100vh] flex items-center relative md:justify-center">
             <div className="flex flex-col z-3 max-w-[50rem] mt-[5rem] md:text-center md:items-center">
               <h4 className='text-[1.5rem] text-black font-mont'>Plan your trip now</h4>
