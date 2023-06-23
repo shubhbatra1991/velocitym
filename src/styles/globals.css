@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+.my-custom-hero-bg {
+  background-image: url('../assets/cars/heroes-bg.png');
+}
+
+.my-custom-book-class{
+  background-image: url('../assets/hero/book-banner.png');
+}
+
+@layer components {
+  .container{
+    @apply !max-w-[133rem] !m-0 !px-[2.5rem];
+  }
+}
+
 :root {
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;

@@ -1,11 +1,14 @@
 import React from 'react';
 import { FaPhone } from 'react-icons/fa';
 
+
 const BookBanner = () => {
   return (
    <>
-     <div className="flex w-full h-[20rem] relative mt-[7rem] ">
-        <div className="bg-gray-500 opacity-[0.89] w-full h-full right-0 top-0 absolute">
+     <div className="flex w-full h-[20rem] my-custom-book-class bg-no-repeat
+      relative mt-[7rem] md:h-fit-content md:p-4"
+     >
+        <div className="bg-black opacity-[0.75] w-full h-full right-0 top-0 absolute" >
         <div className="container">
             <div className="text-white z-5 relative w-full h-[20rem] flex items-center gap-[5rem] md:flex-col md:justify-center md:items-center md:gap-[1rem] md:text-center">
             <h2 className='text-[3.2rem]' >Book a car by getting in touch with us</h2>

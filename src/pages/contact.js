@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroPages from '@/components/HeroPage';
+import BookBanner from '@/components/BookBanner';
 
 const contact = () => {
   return (
@@ -52,19 +53,8 @@ const contact = () => {
             </div>
           </div>
         </div>
-        <div className="book-banner">
-          <div className="book-banner__overlay"></div>
-          <div className="container">
-            <div className="text-content">
-              <h2>Book a car by getting in touch with us</h2>
-              <span>
-                <i className="fa fa-phone"></i>
-                <h3>(123) 456-7869</h3>
-              </span>
-            </div>
-          </div>
-        </div>
       </section>
+      <BookBanner />
     </>
   )
 }
