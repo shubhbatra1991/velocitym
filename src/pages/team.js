@@ -1,11 +1,12 @@
 import HeroPages from '@/components/HeroPage';
 import React from 'react';
-import { FaPhone } from 'react-icons/fa';
+
 import Person1 from '../assets/team/member1.jpg';
 import Person2 from '../assets/team/member2.jpg';
 import Person3 from '../assets/team/member3.jpg';
 import Person4 from '../assets/team/member4.jpg';
 import Person5 from '../assets/team/member5.jpg';
+import BookBanner from '@/components/BookBanner';
 
 
 const team = () => {
@@ -20,7 +21,7 @@ const team = () => {
   return (
     <section>
       <HeroPages name="Our Team" />
-      <div>
+      <div className='container'>
       <div className="grid grid-cols-3 grid-rows-auto gap-[4rem] items-center text-center px-[10rem] py-[2rem] w-[110rem] m-0 
       lg:grid-cols-2 lg:w-fit-content md:grid-cols-1 md:w-fit-content">
             {teamPpl.map((ppl, id) => (
@@ -37,19 +38,7 @@ const team = () => {
           </div>
       </div>
 
-      <div className="flex w-full h-[20rem] relative mt-[7rem] ">
-              <div className="bg-gray-500 opacity-[0.89] w-full h-full right-0 top-0 absolute">
-                <div className="container">
-                  <div className="text-white z-5 relative w-full h-[20rem] flex items-center gap-[5rem] md:flex-col md:justify-center md:items-center md:gap-[1rem] md:text-center">
-                    <h2 className='text-[3.2rem]' >Book a car by getting in touch with us</h2>
-                    <span className='flex text-[2.7rem] gap-[1rem] items-center text-orange-600 whitespace-nowrap'>
-                      <i className='fa fa-phone'><FaPhone /></i>
-                      <h3>(123)-456-999</h3>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
+     <BookBanner />
     </section>
     
   )
