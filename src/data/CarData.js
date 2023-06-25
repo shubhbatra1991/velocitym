@@ -1,9 +1,9 @@
-import Golf6 from "../images/cars-big/golf6.jpg";
-import AudiA1 from "../images/cars-big/audia1.jpg";
-import Toyota from "../images/cars-big/toyotacamry.jpg";
-import Bmw320 from "../images/cars-big/bmw320.jpg";
-import Benz from "../images/cars-big/benz.jpg";
-import Passat from "../images/cars-big/passatcc.jpg";
+import Golf6 from "../assets/cars/golf6.jpg";
+import AudiA1 from "../assets/cars/audia1.jpg";
+import Toyota from "../assets/cars/toyotacamry.jpg";
+import Bmw320 from "../assets/cars/bmw320.jpg";
+import Benz from "../assets/cars/benz.jpg";
+import Passat from "../assets/cars/passatcc.jpg";
 
 export const CAR_DATA = [
   [
@@ -24,7 +24,7 @@ export const CAR_DATA = [
     {
       name: "Audi A1 S-Line",
       price: "45",
-      img: AudiA1,
+      img: 'assets/cars/audi-box.png',
       model: "Audi",
       mark: "A1",
       year: "2012",
