@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaPhone } from 'react-icons/fa';
 import HeroPage from '@/components/HeroPage';
 import Testimonials from '@/components/Testimonials';
 import BookBanner from '@/components/BookBanner';

@@ -16,12 +16,12 @@ const team = () => {
     <section>
       <HeroPages name="Our Team" />
       <div className='container'>
-      <div className="grid grid-cols-3 grid-rows-auto gap-[4rem] items-center text-center px-[10rem] py-[2rem] w-[110rem] m-0 
+      <div className="grid grid-cols-3 grid-rows-auto justify-center gap-[4rem] items-center text-center px-[10rem] py-[2rem] w-[110rem] m-auto 
       ">
             {teamPpl.map((ppl, id) => (
-              <div key={id} className="w-[33rem] bg-white shadow-xl sm:w-full">
+              <div key={id} className="w-[33rem] h-[500px] bg-white shadow-xl sm:w-full">
                 <div className="w-full h-auto bg-white">
-                  <img src={ppl.img} alt="team_img" className='w-full'/>
+                  <img src={ppl.img} alt="team_img" className='w-full h-[410px]'/>
                 </div>
                 <div className="text-black p-[3rem]">
                   <h3 className='text-[2.2rem]'>{ppl.name}</h3>
