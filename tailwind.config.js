@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        '3xl': '0 10px 15px 0 rgba(255, 83, 48, 0.25)',
+      },
       fontFamily: {
         mont: ['var(--font-mont)', ...fontFamily.sans],
       },
