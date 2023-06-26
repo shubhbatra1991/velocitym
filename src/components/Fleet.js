@@ -20,11 +20,11 @@ const Fleet = () => {
   return (
 
     <>
-      <section className="py-[10rem]">
-        <div className="!max-w-[133rem] !m-0 !px-[2.5rem]">
+      <section className="py-[10rem] w-full">
+        <div className="container">
           <div className="flex flex-col">
-            <div className="m-0 text-center text-black max-w-[50rem] mb-[5rem]">
-              <h3 className='text-[2.4rem] font-mont font-500'>Vehicle Models</h3>
+            <div className="m-auto text-center text-black max-w-[50rem] mb-[5rem]">
+              <h3 className='text-[2.4rem] font-mont font-bold'>Vehicle Models</h3>
               <h2 className='text-[4.2rem] font-mont mt-[0.5rem] mb-[1rem]'>Our rental fleet</h2>
               <p className='text-[1.6rem] font-mont text-gray-500 leading-[1.5]'>
                 Choose from a variety of our amazing vehicles to rent for your

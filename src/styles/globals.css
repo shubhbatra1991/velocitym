@@ -5,6 +5,9 @@
 .my-custom-hero-bg {
   background-image: url('../assets/cars/heroes-bg.png');
 }
+.my-main-banner-bg {
+  background-image: url('../assets/hero/hero-bg.png');
+}
 
 .my-custom-book-class{
   background-image: url('../assets/hero/book-banner.png');
@@ -17,9 +20,39 @@
   background-repeat: no-repeat;
 }
 
+.my-download-class{
+  background-image: url('../assets/store/bg02.png');
+  background-color: #f8f8f8;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.my-faqs{
+  background-image: url('../assets/cars/car.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0% 70%;
+  padding: 10rem 0;
+}
+.active-question{
+  background-color: #ff4d30;
+  color: white;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+}
+.active-answer{
+  max-height: 20rem;
+  padding: 2.8rem 4.5rem;
+  transition: 0.4s ease;
+}
+
 @layer components {
   .container{
     @apply !max-w-[133rem] !m-auto !px-[2.5rem];
+  }
+  .scroll-up {
+    @apply fixed text-[2.5rem] text-white bg-orange-600 w-[2rem]
+    h-[2rem] bottom-[5rem] right-[5rem] z-20 hidden items-center text-center
+    justify-center p-8 cursor-pointer border-[3px] border-white;
   }
 }
 
