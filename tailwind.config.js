@@ -20,7 +20,6 @@ module.exports = {
         'carfaq': "url('/src/assets/cars/car-bg.png')",
       },
     },
-  },
     screens: {
       "2xl": { max: "1535px" },
       // => @media (max-width: 1535px) { ... }
@@ -39,6 +38,7 @@ module.exports = {
   
       "xs": { max: "479px" },
       // => @media (max-width: 479px) { ... }
+    },
   },
   plugins: [],
 }

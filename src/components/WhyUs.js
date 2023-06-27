@@ -19,8 +19,8 @@ const WhyUs = () => {
               src={MainImg}
               alt="car_img"
             />
-            <div className="flex justify-around mt-[3rem] w-full ">
-              <div className="text-left flex flex-col max-w-[50rem] text-black ">
+            <div className="flex justify-around mt-[3rem] w-full lg:flex-col lg:items-center lg:text-center lg:gap-[5.5rem] ">
+              <div className="text-left flex flex-col max-w-[50rem] text-black lg:items-center lg:text-center ">
                 <h4 className='text-[2.2rem] mb-[0.7rem] font-600 font-mont '>Why Choose Us</h4>
                 <h2 className='text-[4.2rem] leading-[1.2] mb-[2rem]'>Best valued deals you will ever find</h2>
                 <p className='text-[1.6rem] font-mont leading-[1.5] text-gray-400 mb-[3.3rem]'>
