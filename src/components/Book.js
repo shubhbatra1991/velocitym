@@ -6,8 +6,7 @@ import CarToyota from "../assets/cars/audia1.jpg";
 import CarBmw from "../assets/cars/audia1.jpg";
 import CarMercedes from "../assets/cars/audia1.jpg";
 import CarPassat from "../assets/cars/audia1.jpg";
-import { FaXmark, FaCar, FaLocationDot } from 'react-icons/fa';
-import { FaCalendarDays, FaCircleInfo } from 'react-icons/fa';
+
 
 
 const Book = () => {
@@ -157,7 +156,7 @@ const Book = () => {
 
   return (
     <>
-      <section id="booking-section" className="relative bg-gradient-to-b from-gray-200 to-white">
+      <section id="booking-section" className="relative bg-gradient-to-b from-gray-50 to-white w-full">
         {/* overlay */}
         <div
           onClick={openModal}
@@ -165,26 +164,38 @@ const Book = () => {
         ></div>
 
         <div className="container">
-          <div className="m-0 mb-[10rem]">
-            <div className="bg-white bg-bookpg w-full p-16 shadow-md h-auto relative z-4 text-white rounded-2xl bg-cover bg-center flex flex-col md:p-10 ">
-              <h2 className='text-[3rem] font-bold mb-[2.7rem]'>Book a car</h2>
+          <div className="m-auto mb-[10rem]">
+            <div className="bg-white bg-bookpg w-full p-[4rem] shadow-[0_10px_20px_0_rgba(0,0,0,0.1)] h-auto relative z-4 text-white 
+            rounded-[5px] bg-cover bg-no-repeat bg-center flex flex-col  ">
+              <h2 className='text-[2.4rem] font-bold mb-[2.7rem]'>Book a car</h2>
 
-              <p className="bg-red-100 border border-red-200 p-4 mb-6 mt-4 hidden rounded-lg text-p-size font-medium justify-between items-center">
-                All fields required! <i className="fa fa-xmark cursor-pointer"></i>
+              <p className="error-message bg-red-100 border border-red-200 py-[1rem] px-[1.4rem] mb-[1.8rem] mt-[-1rem] rounded-[0.8rem] text-[1.6rem] hidden font-medium justify-between items-center">
+                All fields required! <i className="fa fa-xmark cursor-pointer">
+                  
+                </i>
               </p>
 
-              <p className="text-green-800 bg-green-200 border-red-300 py-4 px-5 mb-6 -mt-4 border rounded-lg text-p-size font-medium hidden flex justify-between items-center">
+              <p className="booking-done text-green-800 bg-green-200 border-red-300 py-4 px-[1.25rem] mb-[1.8rem] -mt-4 border-[1px] border-transparent rounded-[0.8rem] text-[1.6rem] font-medium hidden justify-between items-center">
                 Check your email to confirm an order.{" "}
-                <i onClick={hideMessage} className="fa fa-xmark cursor-pointer"></i>
+                <i onClick={hideMessage} className="fa fa-xmark cursor-pointer">
+
+                </i>
               </p>
 
-              <form className="grid grid-cols-3 grid-rows-auto gap-[2rem] lg:grid-cols-2 md:grid-cols-1">
+              <form className="grid grid-cols-3 grid-rows-auto gap-[2rem]">
                 <div className="flex flex-col">
-                  <label className='text-[1.2rem] font-semibold mb-[1.2rem] text-black'>
-                    <i className="fa fa-car text-orange-500"></i> &nbsp; Select Your Car
+                  <label className='text-[1.6rem] font-semibold mb-[1.2rem] text-black'>
+                    <i className="fa fa-car text-orange-500">
+                      
+                    </i> &nbsp; Select Your Car
                     Type <b className='text-orange-500'>*</b>
                   </label>
-                  <select value={carType} onChange={handleCar} className='outline-none text-[1.5rem] text-gray-500 font-mont border border-gray-200 rounded-md font-normal p-4'>
+                  <select 
+                      value={carType} 
+                      onChange={handleCar} 
+                      className='outline-none text-[1.5rem] text-gray-500 font-mont border-[1px] 
+                      border-gray-200 rounded-[3px] py-[1.2rem] px-[1.3rem]'
+                  >
                     <option>Select your car type</option>
                     <option value="Audi A1 S-Line">Audi A1 S-Line</option>
                     <option value="VW Golf 6">VW Golf 6</option>
@@ -198,37 +209,47 @@ const Book = () => {
                 </div>
 
                 <div className="flex flex-col">
-                  <label className='text-[1.2rem] font-semibold mb-[1.2rem] text-black'>
+                  <label className='text-[1.6rem] font-semibold mb-[1.2rem] text-black'>
                     <i className="fa fa-location-dot text-orange-500"></i> &nbsp; Pick-up{" "}
                     <b className='text-orange-500'>*</b>
                   </label>
-                  <select value={pickUp} onChange={handlePick} className='outline-none text-[1.5rem] text-gray-500 font-mont border border-gray-200 rounded-md font-normal p-4'>
+                  <select 
+                      value={pickUp} 
+                      onChange={handlePick} 
+                      className='outline-none text-[1.5rem] text-gray-500 font-mont border-[1px] 
+                      border-gray-200 rounded-[3px] font-normal py-[1.2rem] px-[1.3rem]'
+                  >
                     <option>Select pick up location</option>
-                    <option>Belgrade</option>
-                    <option>Novi Sad</option>
-                    <option>Nis</option>
-                    <option>Kragujevac</option>
-                    <option>Subotica</option>
+                      <option>Dublin</option>
+                      <option>Cork</option>
+                      <option>Galway</option>
+                      <option>Letterkenny</option>
+                      <option>Wicklow</option>
                   </select>
                 </div>
 
                 <div className="flex flex-col">
-                  <label className='text-[1.2rem] font-semibold mb-[1.2rem] text-black'>
+                  <label className='text-[1.6rem] font-semibold mb-[1.2rem] text-black'>
                     <i className="fa fa-location-dot text-orange-500"></i> &nbsp; Drop-of{" "}
                     <b className='text-orange-500'>*</b>
                   </label>
-                  <select value={dropOff} onChange={handleDrop} className='outline-none text-[1.5rem] text-gray-500 font-mont border border-gray-200 rounded-md font-normal p-4'>
+                  <select 
+                      value={dropOff} 
+                      onChange={handleDrop} 
+                      className='outline-none text-[1.5rem] text-gray-500 font-mont border-[1px] 
+                      border-gray-200 rounded-[3px] font-normal py-[1.2rem] px-[1.3rem]'
+                  >
                     <option>Select drop off location</option>
-                    <option>Novi Sad</option>
-                    <option>Belgrade</option>
-                    <option>Nis</option>
-                    <option>Kragujevac</option>
-                    <option>Subotica</option>
+                      <option>Dublin</option>
+                      <option>Cork</option>
+                      <option>Galway</option>
+                      <option>Letterkenny</option>
+                      <option>Wicklow</option>
                   </select>
                 </div>
 
                 <div className="flex flex-col relative">
-                  <label htmlFor="picktime" className='text-[1.2rem] font-semibold mb-[1.2rem] text-black'>
+                  <label htmlFor="picktime" className='text-[1.6rem] font-semibold mb-[1.2rem] text-black'>
                     <i className="fa fa-calendar-days text-orange-500 "></i> &nbsp;
                     Pick-up <b className='text-orange-500'>*</b>
                   </label>
@@ -237,12 +258,19 @@ const Book = () => {
                     value={pickTime}
                     onChange={handlePickTime}
                     type="date"
-                    className='text-gray-400 pr-[3rem] outline-none border border-solid border-gray-300'
+                    className='text-gray-400 pr-[3rem] outline-none border-[1px] border-solid 
+                    border-gray-300 h-auto leading-[36px]  mt-[1rem] w-full text-[10px] '
+
+                    
                   ></input>
                 </div>
 
                 <div className="flex flex-col relative">
-                  <label htmlFor="droptime" className='text-[1.2rem] font-semibold mb-[1.2rem] text-black'>
+                  <label 
+                    htmlFor="droptime" 
+                    className='text-[1.6rem] font-semibold mb-[1.2rem] text-black'
+                    type="date"
+                  >
                     <i className="fa fa-calendar-days text-orange-500 "></i> &nbsp;
                     Drop-of <b className='text-orange-500'>*</b>
                   </label>
@@ -251,11 +279,17 @@ const Book = () => {
                     value={dropTime}
                     onChange={handleDropTime}
                     type="date"
-                    className='text-gray-400 pr-[3rem] outline-none border border-solid border-gray-300'
+                    className='text-gray-400 pr-[3rem] outline-none border-[1px] border-solid 
+                    border-gray-300 h-auto leading-[36px]  mt-[1rem] w-full text-[10px] '
                   ></input>
                 </div>
 
-                <button onClick={openModal} type="submit" className="py-4 px-4 h-fit self-end border-none font-mont text-1.8rem font-medium text-black bg-orange-600 shadow-btn  transition-all duration-300 cursor-pointer">
+                <button 
+                    onClick={openModal} 
+                    type="submit" 
+                    className="py-[1.3rem] px-[1.3rem] h-fit self-end border-none font-mont text-1.8rem font-medium 
+                    text-white bg-orange-600 shadow-[0_10px_15px_rgba(255,83,48,0.35)]  transition-all duration-300 cursor-pointer"
+                >
                   Search
                 </button>
               </form>
@@ -267,7 +301,8 @@ const Book = () => {
       {/* modal ------------------------------------ */}
 
       <div className={`
-              opacity-0 hidden flex-col fixed overflow-x-hidden overflow-y-scroll z-50 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-83rem h-screen border-2 border-white bg-white bg-opacity-100 pr-2 text-black
+              opacity-0 hidden flex-col fixed overflow-x-hidden overflow-y-scroll z-50 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+              w-83rem h-screen border-2 border-white bg-white bg-opacity-100 pr-2 text-black
               md:w-full sm:top-[50%] 
               ${modal ? "active-modal" : ""}
             `}
@@ -479,6 +514,6 @@ const Book = () => {
       </div>
     </>
   )
-}
+};
 
 export default Book;
