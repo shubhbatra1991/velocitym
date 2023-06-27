@@ -42,7 +42,7 @@ const Testimonials = () => {
 
 
               {/* second box */}
-              <div className="bg-white shadow-md w-[54rem] p-[3rem] relative lg:px-[3rem] lg:py-[5rem] ">
+              <div className="bg-white shadow-md w-[54rem] p-[3rem] relative lg:px-[3rem] lg:py-[5rem] lg:hidden ">
                 <span className="text-[6.2rem] text-orange-600 absolute bottom-[60px] right-[60px]">
                   <i className="fa fa-quote-right"><BiSolidQuoteRight /></i>
                 </span>

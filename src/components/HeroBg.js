@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import HeroCar from "../assets/cars/golf6.jpg";
+import HeroCar from "../assets/cars/bigcar.png";
 import { useEffect, useState } from "react";
 import Image from 'next/image';
 import BannerBg from '../assets/hero/hero-bg.png';
@@ -45,8 +45,8 @@ const HeroBg = () => {
             alt="bg-shape" 
             src={BannerBg}
             />
-          <div className="w-full h-[100vh] flex items-center relative">
-            <div className="flex flex-col z-3 max-w-[50rem] mt-[5rem]">
+          <div className="w-full h-[100vh] flex items-center relative md:justify-center">
+            <div className="flex flex-col z-3 max-w-[50rem] mt-[5rem] md:text-center md:items-center">
               <h4 className='text-[2.2rem] text-black font-mont'>Plan your trip now</h4>
               <h1 className='text-[5.2rem] font-mont font-bold text-black leading-[1.2] mt-[1rem] mb-[2.3rem]'>
                 Save <span className='text-orange-500'>big</span> with our car rental
@@ -58,8 +58,8 @@ const HeroBg = () => {
               <div className="flex gap-8 text-[1.6rem] font-mont">
                 <Link
                   onClick={bookBtn}
-                  className="flex no-underline text-white font-bold bg-orange-500 py-[1.8rem] px-[3rem] rounded-[0.3rem] transition-all duration-300 border-2 border-orange-500
-                  shadow-[0_10px_15px_0_rgba(255,83,48,0.35)] xs:p-4 hover:bg-orange-400 hover:shadow-lg hover:shadow-red-950 "
+                  className="flex no-underline text-white font-bold bg-orange-500 !py-[1.8rem] !px-[3rem] rounded-[0.3rem] justify-center transition-all duration-300 border-2 border-solid border-orange-500
+                  shadow-[0_10px_15px_0_rgba(255,83,48,0.35)] xs:p-4 hover:bg-orange-600 hover:shadow-lg "
                   href="/"
                 >
                   Book Ride &nbsp; 
@@ -81,7 +81,7 @@ const HeroBg = () => {
             <Image
               src={HeroCar}
               alt="car-img"
-              className="z-2 absolute right-0 w-[65%] mt-[5rem]"
+              className="z-2 absolute right-0 w-[60%] mt-[5rem] md:hidden"
             />
           </div>
         </div>

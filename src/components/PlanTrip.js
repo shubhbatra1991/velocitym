@@ -15,7 +15,7 @@ const PlanTrip = () => {
               <h2 className='text-[4.2rem] mt-[1.3rem] mb-[3rem] font-mont font-bold'>Quick & easy car rental</h2>
             </div>
 
-            <div className="grid grid-cols-3 grid-rows-auto mt-[3.7rem] px-[3rem] ">
+            <div className="grid grid-cols-3 grid-rows-auto mt-[3.7rem] px-[3rem] md:grid-cols-1 md:mt-[1rem] lg:grid-cols-2 lg:gap-x-[2rem] ">
               <div className="text-center px-[6rem] py-[1rem] ">
                 <Image src={SelectCar} alt="icon_img" width={150} height={150} className='m-auto' />
                 <h3 className='text-[2.4em] font-bold mb-[1rem]'>Select Car</h3>

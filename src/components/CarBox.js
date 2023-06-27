@@ -9,8 +9,7 @@ const CarBox = ({ data, carID }) => {
       <div 
         key={id} 
         className="
-          gap-[11rem] flex justify-between lg:gap-4 md:flex-col
-          md:items-center md:justify-center md:gap-[5rem]
+          gap-[11rem] flex justify-between md:flex-col md:items-center md:justify-center md:gap-[5rem] xl:gap-[2rem]
       ">
         {/* car */}
         <div className="w-[50rem] relative md:w-full">

@@ -182,7 +182,7 @@ const Book = () => {
                 </i>
               </p>
 
-              <form className="grid grid-cols-3 grid-rows-auto gap-[2rem]">
+              <form className="grid grid-cols-3 grid-rows-auto gap-[2rem] sm:grid-cols-1 lg:grid-cols-2">
                 <div className="flex flex-col">
                   <label className='text-[1.6rem] font-semibold mb-[1.2rem] text-black'>
                     <i className="fa fa-car text-orange-500">

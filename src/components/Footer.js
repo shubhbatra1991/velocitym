@@ -7,17 +7,17 @@ function Footer() {
     <>
       <footer className="bg-white py-[10rem]">
         <div className="container">
-          <div className="grid grid-cols-4 gap-[8rem] text-left justify-center text-black">
+          <div className="grid grid-cols-4 gap-[8rem] text-left justify-center text-black sm:grid-cols-1 lg:grid-cols-2">
           {/* grid-cols-[27fr 21fr 21fr 21fr]  */}
-            <ul className="list-none">
-              <li className="text-[2.4rem] mb-[1.5rem] font-bold" >
+            <ul className="list-none sm:text-center">
+              <li className="text-[2.4rem] mb-[1.5rem] font-bold sm:odd:mb-[1.5rem]" >
                 <span>Velocity</span> <span>M</span> Rental
               </li>
               <li className="text-[1.6rem] mb-[3rem] leading-[1.7] text-gray-400">
               We offer a big range of vehicles for all your driving needs. We have the perfect car to meet your needs.
               </li>
               <li className="text-[1.6rem] mb-[1rem] font-500 font-mont ">
-                <Link href="tel:123456789" className="text-black transition-all duration-200 no-underline flex hover:text-orange-500">
+                <Link href="tel:123456789" className="text-black transition-all duration-200 no-underline flex hover:text-orange-500 sm:justify-center">
                   <i className="fa fa-phone mt-[4px]">
                     <FaPhoneAlt />
                   </i> &nbsp; (123) -456-789
@@ -26,7 +26,7 @@ function Footer() {
 
               <li className="text-[1.6rem] mb-[1rem] font-500 font-mont ">
                 <Link 
-                  className="text-black transition-all duration-200 no-underline flex hover:text-orange-500"
+                  className="text-black transition-all duration-200 no-underline flex hover:text-orange-500 sm:justify-center"
                   href="mailto: info@velocitym.com"
                 >
                   <i className="fa fa-envelope mt-[4px] ">
@@ -50,7 +50,7 @@ function Footer() {
             </ul>
 
 
-            <ul className="list-none">
+            <ul className="list-none sm:text-center">
               <li className="text-[2.4rem] font-bold uppercase font-mont cursor-auto">Company</li>
               <li className="text-[1.6rem] mb-[1rem]">
                 <Link className="no-underline text-black transition-all duration-200 hover:text-orange-500"  href="#home">Dublin, Ireland</Link>
@@ -69,14 +69,14 @@ function Footer() {
               </li>
             </ul>
 
-            <ul className="list-none">
+            <ul className="list-none sm:text-center">
               <li className="text-[2.4rem] font-bold uppercase font-mont cursor-auto mb-[1rem]" >Working Hours</li>
               <li className="text-[1.6rem] mb-[1rem]" >Mon - Fri: 9:00AM - 9:00PM</li>
               <li className="text-[1.6rem] mb-[1rem]" >Sat: 9:00AM - 19:00PM</li>
               <li className="text-[1.6rem] mb-[1rem]" >Sun: Closed</li>
             </ul>
 
-            <ul className="list-none">
+            <ul className="list-none sm:text-center">
               <li className="text-[2.4rem] font-bold uppercase font-mont cursor-auto mb-[1rem]">Subscription</li>
               <li className="text-[1.6rem] mb-[1rem]" >
                 <p>Subscribe your Email address for latest news & updates.</p>

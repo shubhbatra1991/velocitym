@@ -31,7 +31,7 @@ const Fleet = () => {
                 next adventure or business trip
               </p>
             </div>
-            <div className="flex justify-between gap-[1rem] ">
+            <div className="flex justify-between gap-[1rem] lg:flex-col lg:gap-[5rem] ">
               {/* pick car */}
               <div className="flex flex-col gap-[0.7rem]">
                 <button

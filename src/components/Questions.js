@@ -32,7 +32,7 @@ const Questions = () => {
             <div className="flex flex-col text-center mt-[7rem] items-center">
 
               {/* Question 1 */}
-              <div className="flex flex-col text-black bg-white w-[80rem] shadow-[0_10px_15px_0_rgba(0,0,0,0.1)] cursor-pointer">
+              <div className="flex flex-col text-black bg-white w-[80rem] shadow-[0_10px_15px_0_rgba(0,0,0,0.1)] cursor-pointer md:w-full">
                 <div
                   id="q1"
                   onClick={() => openQ('q1')}
@@ -50,7 +50,7 @@ const Questions = () => {
               </div>
 
               {/* Question 2 */}
-              <div className="flex flex-col text-black bg-white w-[80rem] shadow-[0_10px_15px_0_rgba(0,0,0,0.1)] cursor-pointer">
+              <div className="flex flex-col text-black bg-white w-[80rem] shadow-[0_10px_15px_0_rgba(0,0,0,0.1)] cursor-pointer md:w-full">
                 <div
                   id="q2"
                   onClick={() => openQ('q2')}
@@ -68,7 +68,7 @@ const Questions = () => {
               </div>
 
               {/* Question 3 */}
-              <div className="flex flex-col text-black bg-white w-[80rem] shadow-[0_10px_15px_0_rgba(0,0,0,0.1)] cursor-pointer">
+              <div className="flex flex-col text-black bg-white w-[80rem] shadow-[0_10px_15px_0_rgba(0,0,0,0.1)] cursor-pointer md:w-full">
                 <div
                   id="q3"
                   onClick={() => openQ('q3')}
