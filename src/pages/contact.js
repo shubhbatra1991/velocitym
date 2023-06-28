@@ -10,8 +10,8 @@ const contact = () => {
       <section>
         <HeroPages name="Contact" />
         <div className="container">
-          <div className="grid grid-cols-2 gap-[3rem] m-auto text-black px-[2rem] py-[10rem] my-bg-contact-class">
-            <div className="flex flex-col gap-[1rem] max-w-[41rem]">
+          <div className="grid grid-cols-2 gap-[3rem] m-auto text-black px-[2rem] py-[10rem] my-bg-contact-class lg:grid-cols-1 lg:text-center">
+            <div className="flex flex-col gap-[1rem] max-w-[41rem] lg:m-auto lg:mb-[2rem]">
               <h2 className='text-[4.2rem] leading-[1.3] mb-[2rem] font-bold' >Need additional information?</h2>
               <p className='text-[1.6rem] font-mont text-gray-500 leading-[1.6] mb-[2rem]'>
                 A multifaceted professional skilled in multiple fields of

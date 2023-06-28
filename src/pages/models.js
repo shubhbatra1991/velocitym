@@ -23,7 +23,7 @@ const models = () => {
       <HeroPages name="Vehicle Models" /> 
       <div className='container'>
       <div className="grid grid-cols-3 grid-rows-auto gap-[3rem] items-center 
-          text-center m-0 py-[10rem]">
+          text-center m-0 py-[10rem] md:grid-cols-1 md:w-fit lg:grid-cols-2 lg:w-fit">
            
            {
               modelCars.map((cars, id)=>{

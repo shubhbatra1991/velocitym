@@ -19,10 +19,12 @@ const about = () => {
 
         <div className="container">
           <div className="!flex gap-[5rem] mx-40 my-40 !max-w-[90rem] items-center
-          lg:grid lg:grid-cols-1 lg:max-w-[49rem] lg:text-center
-          sm:max-w-full">
+            lg:!grid lg:grid-cols-1 lg:max-w-[49rem] lg:text-center
+            sm:max-w-full smd:max-w-full
+            "
+          >
             <Image
-              className="w-[43rem] h-[43rem] lg:m-0 sm:w-full sm:h-auto"
+              className="w-[43rem] h-[43rem] lg:m-auto sm:w-full sm:h-auto smd:w-full smd:h-auto"
               src={AboutMain}
               alt="car-renting"
             />
@@ -36,26 +38,30 @@ const about = () => {
                 affronting imprudence no precaution. My indulged as disposal
                 strongly attended.
               </p>
-              <div className="grid grid-cols-3 gap-[4rem]">
-                <div className="flex flex-col">
+              <div className="grid grid-cols-3 gap-[4rem] smd:grid-cols-1 smd:m-auto smd:gap-0">
+                <div className="flex flex-col smd:items-center">
                   <Image src={Box1} alt="car-icon" className='w-[7rem]' />
-                  <span className='flex items-center gap-[1rem] '>
+                  <span className='flex items-center gap-[1rem] smd:text-center smd:flex-col '>
                     <h4 className='text-[4.6rem]'>20</h4>
-                    <p className='text-[1.6rem] text-gray-400 font-mont leadin-[1.5] mt-[2rem] mb-[4rem]'>Car Types</p>
+                    <p className='text-[1.6rem] text-gray-400 font-mont leadin-[1.5] mt-[2rem] 
+                      mb-[4rem] smd:mt-0'
+                    >Car Types</p>
                   </span>
                 </div>
                 <div className="flex flex-col  ">
                   <Image src={Box2} alt="car-icon"  className='w-[7rem]'/>
-                  <span className='flex items-center gap-[1rem] '>
+                  <span className='flex items-center gap-[1rem] smd:text-center smd:flex-col '>
                     <h4 className='text-[4.6rem]'>85</h4>
-                    <p className='text-[1.6rem] text-gray-400 font-mont leadin-[1.5] mt-[2rem] mb-[4rem]'>Rental Outlets</p>
+                    <p className='text-[1.6rem] text-gray-400 font-mont leadin-[1.5] mt-[2rem] 
+                    mb-[4rem] smd:mt-0'>Rental Outlets</p>
                   </span>
                 </div>
                 <div className="flex flex-col ">
                   <Image src={Box3} alt="car-icon" className="last:w-[5rem] w-[7rem]" />
-                  <span className='flex items-center gap-[1rem] '>
+                  <span className='flex items-center gap-[1rem] smd:text-center smd:flex-col '>
                     <h4 className='text-[4.6rem]'>75</h4>
-                    <p className='text-[1.6rem] text-gray-400 font-mont leadin-[1.5] mt-[2rem] mb-[4rem]'>Repair Shop</p>
+                    <p className='text-[1.6rem] text-gray-400 font-mont leadin-[1.5] mt-[2rem] 
+                    mb-[4rem] smd:mt-0'>Repair Shop</p>
                   </span>
                 </div>
               </div>

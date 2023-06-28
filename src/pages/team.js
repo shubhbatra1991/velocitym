@@ -16,7 +16,8 @@ const team = () => {
     <section>
       <HeroPages name="Our Team" />
       <div className='container'>
-      <div className="grid grid-cols-3 grid-rows-auto justify-center gap-[4rem] items-center text-center px-[10rem] py-[2rem] w-[110rem] m-auto 
+      <div className="grid grid-cols-3 grid-rows-auto justify-center gap-[4rem] items-center text-center py-[10rem] 
+        px-[2rem] w-[110rem] m-auto lg:grid-cols-2 lg:w-fit md:grid-cols-1 md:w-fit 
       ">
             {teamPpl.map((ppl, id) => (
               <div key={id} className="w-[33rem] h-[500px] bg-white shadow-xl sm:w-full">
